@@ -1,9 +1,15 @@
 timesheet is a simple timekeeping script written in python. Originally meant as a way for me to keep track of the number of hours I was spending on classes and projects, the script writes information about classes attended (or not) in a logfile ~/.timesheetlog. 
+
 To run the program, simply say 
+	
 	python timesheet py [options]
+
 or
+	
 	./timesheet.py [options]
+
 Valid options are as follows:
+
 a : Absent. Use this to enter a class that you missed in the log. You need to give three arguments, the class name, date and a small commit message citing your reason for missing the lecture. For instance
 	./timesheet.py a CHY211 31/08/16 "Too many curly arrows"
 
