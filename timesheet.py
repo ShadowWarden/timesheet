@@ -1,3 +1,4 @@
+#!/bin/python
 # timesheet.py
 # Omkar H. Ramachandran
 # omkar.ramachandran@colorado.edu
@@ -69,6 +70,7 @@ elif(sys.argv[1] == "np"):
 elif(sys.argv[1] == 'hours'):
 	if(len(sys.argv) != 3):
 		print("If hours, then need class name")
+		sys.exit(1)
 	Fin = open(path,"r")
 	data = []
 	lines = [line.rstrip() for line in Fin.readlines()]
